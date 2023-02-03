@@ -1,0 +1,8 @@
+.divAboutMe{
+    display:grid;
+grid-template-columns:600px 400px;
+grid-template-rows:500px;
+column-gap:40px;
+justify-content:center;
+align-items:center;
+}
