@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "prod_start": "export NODE_OPTIONS=--openssl-legacy-provider"
+    "prod_start": "unset NODE_OPTIONS"
   },
   "dependencies": {
     "framer-motion": "^9.0.1",
