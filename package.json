@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider --inspect' next build",
     "start": "next start",
-    "prod_start": "unset NODE_OPTIONS"
+    "prod_start": "export NODE_OPTIONS=--openssl-legacy-provider",
+    "export": "next export"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "framer-motion": "^9.0.1",
     "next": "^10.2.3",
     "react": "^18.2.0",
